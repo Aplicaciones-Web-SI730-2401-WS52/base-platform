@@ -2,6 +2,8 @@ using BasePlatform.API.Shared.Domain.Repositories;
 using BasePlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
 using BasePlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
 using BasePlatform.API.Shared.Interfaces.ASP.Configuration;
+using BasePlatform.API.Urgency.Application.Comands;
+using BasePlatform.API.Urgency.Domain;
 using BasePlatform.API.Urgency.Domain.Repositories;
 using BasePlatform.API.Urgency.Infraestructure.Respositories;
 using Microsoft.EntityFrameworkCore;
@@ -76,6 +78,7 @@ builder.Services.AddCors(options =>
 // Shared Bounded Context Injection Configuration
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IGuardianRepository, GuardianRepository>();
+builder.Services.AddScoped<IGuardianCommandService, GuardianCommandService>();
 
 
 

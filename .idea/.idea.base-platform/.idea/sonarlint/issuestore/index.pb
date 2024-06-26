@@ -23,3 +23,15 @@ s
 CBasePlatform.API/Urgency/Domain/Repositories/IGuardianRepository.cs,a/0/a0b86d361d05f69de2bb179533d43a6eea5d2279
 K
 BasePlatform.API/Program.cs,6/b/6b6719f3f6675c460d1ab277746485a35750c035
+j
+:BasePlatform.API/Urgency/Domain/IGuardianCommandService.cs,4/1/41b0afe6ab7a5113e72765fec61091bb4a7a29e8
+x
+HBasePlatform.API/Urgency/Domain/Models/Commands/CreateGuardianCommand.cs,5/7/5750e3bed15009a8e0fab7c37143622295480a76
+v
+FBasePlatform.API/Urgency/Application/Comands/GuardianCommandService.cs,1/0/103ac8175aef576ded0fa267b21a7e2a387b52ce
+y
+IBasePlatform.API/Urgency/Domain/Models/Commands/CreatedGuardianCommand.cs,5/2/521bc04ed776732ce3088d72e2e7446642b22b27
+v
+FBasePlatform.API/Urgency/Presentation/Controller/GuardianController.cs,7/b/7b26dce57974b76cf08a4924b018da2f7adff441
+Q
+!BasePlatform.API/appsettings.json,3/1/3145cc5d18f54b06783f17261f76955e13362a30
