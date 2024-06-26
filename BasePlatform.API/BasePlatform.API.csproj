@@ -25,4 +25,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Urgency\Application\" />
+      <Folder Include="Urgency\Presentation\" />
+    </ItemGroup>
+
 </Project>

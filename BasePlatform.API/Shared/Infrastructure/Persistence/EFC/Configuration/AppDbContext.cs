@@ -1,4 +1,5 @@
 using BasePlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+using BasePlatform.API.Urgency.Domain.Models.Entities;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,8 +17,10 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        
 
+        builder.Entity<Guardian>().ToTable("Guardian");
+        builder.Entity<Guardian>().HasKey(g => g.Id);
+        builder.Entity<Guardian>().Property(g => g.Username).HasMaxLength(30);
         
         // Apply SnakeCase Naming Convention
         builder.UseSnakeCaseWithPluralizedTableNamingConvention();
